@@ -78,4 +78,9 @@ public class PedidoServiceImpl implements PedidoService {
                         .build()).collect(Collectors.toList()))
                 .build();
     }
+
+    @Override
+    public List<Pedido> findAll() {
+        return pedidoRepository.findAll();
+    }
 }
